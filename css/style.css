@@ -55,6 +55,8 @@ img {
   z-index: 9999;
 }
 
+/** UTILITIES */
+
 .container {
   max-width: 100%;
   margin: auto;
@@ -132,6 +134,31 @@ img {
   -moz-border-radius: 3rem;
   -ms-border-radius: 3rem;
   -o-border-radius: 3rem;
+}
+
+.section-title {
+  padding: 0 1.5rem;
+  flex: 0 0 100%;
+  min-width: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.section-title h2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section-title h2:before {
+  content: attr(data-heading);
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent-color);
 }
 
 /*? HEADER */
@@ -385,4 +412,71 @@ img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border: 1rem solid transparent;
+}
+
+/*? INFO SECTION */
+.section-about {
+  padding: 8rem 0 8rem;
+  min-height: 100vh;
+}
+
+.section-about .about-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 0 1.5rem;
+}
+
+.section-about .about-img .img-box {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.section-about .about-img .social-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+.section-about .about-img .social-links a {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+  margin: 0 1rem;
+  padding: 1rem;
+  color: var(--accent-color);
+}
+
+.section-about .about-img .img-box img {
+  width: 100%;
+  border: 1rem solid transparent;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.section-about .about-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+}
+
+.section-about .about-info p {
+  margin-bottom: 2rem;
+  line-height: 2.6rem;
+  color: var(--text-black-600);
+}
+.section-about .about-info span {
+  font-weight: 600;
+}
+
+.section-about .about-info .btn-1 {
+  margin: 3rem 2rem 0 0;
 }
