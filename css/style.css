@@ -137,7 +137,7 @@ img {
 /*? HEADER */
 .main-header {
   padding: 1rem;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -173,6 +173,10 @@ img {
 
 .menu-icon {
   margin-left: auto;
+  position: absolute;
+  top: 50%;
+  right: 10.5%;
+  transform: translateY(-50%);
   display: block;
   width: 4rem;
   height: 4rem;
@@ -184,6 +188,10 @@ img {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .menu-icon__line {
