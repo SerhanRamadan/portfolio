@@ -13,6 +13,26 @@
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 }
 
+/** Animations */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
 /** Global Styles */
 
 *,
@@ -519,6 +539,13 @@ img {
 .section-about .tab-content {
   flex: 0 0 100%;
   max-width: 100%;
+  display: none;
+}
+
+.section-about .tab-content.active {
+  display: block;
+  animation: fadeInTop 0.5s ease;
+  -webkit-animation: fadeInTop 0.5s ease;
 }
 
 .section-about .skills {
@@ -590,6 +617,7 @@ img {
   width: 80%;
 }
 
+.section-about .education,
 .section-about .experience {
   padding-bottom: 8rem;
 }
@@ -602,22 +630,26 @@ img {
 
 .section-about .timeline:before {
   content: '';
-  width: 1rem;
+  width: 0.1rem;
   height: 100%;
-  background: red;
+  left: 50%;
+  top: 0;
+  background: var(--bg-black-100);
   position: absolute;
 }
 
 .section-about .timeline .timeline-item {
+  flex: 0 0 100%;
+  max-width: 100%;
   padding: 0 1.5rem;
 }
 
 .section-about .timeline .timeline-item:nth-child(odd) {
-  padding-right: calc(50% + 50px);
+  padding-right: calc(50% + 5rem);
   text-align: right;
 }
 .section-about .timeline .timeline-item:nth-child(even) {
-  padding-left: calc(50% + 50px);
+  padding-left: calc(50% + 5rem);
 }
 
 .section-about .timeline .timleline-item-inner {
@@ -627,4 +659,87 @@ img {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+  position: relative;
+}
+
+.section-about .timeline .timleline-item-inner .icon-1:after,
+.section-about .timeline .timleline-item-inner .icon-3:after {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 0.1rem;
+  background-color: var(--bg-black-100);
+  left: -3rem;
+  top: 2rem;
+}
+
+.section-about .timeline .timleline-item-inner .icon-2:after {
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 0.1rem;
+  background: var(--bg-black-100);
+  right: -3rem;
+  top: 2rem;
+}
+
+.section-about .timeline .timleline-item-inner .icon-1,
+.section-about .timeline .timleline-item-inner .icon-2,
+.section-about .timeline .timleline-item-inner .icon-3 {
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  color: var(--accent-color);
+  border: 0.1rem solid var(--bg-black-100);
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 1.8rem;
+
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.section-about .timeline .timleline-item-inner span {
+  font-weight: 500;
+  color: var(--accent-color);
+  display: block;
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+}
+
+.section-about .timeline .timleline-item-inner h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 0 0 0.5rem;
+}
+
+.section-about .timeline .timleline-item-inner h4 {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--text-black-600);
+  margin: 0;
+}
+
+.section-about .timeline .timleline-item-inner p {
+  font-size: 1.6rem;
+  color: var(--text-black-600);
+  line-height: 2.5rem;
+  margin: 1.5rem 0 0;
+}
+
+.section-about .timeline .timleline-item-inner .icon-1,
+.section-about .timeline .timleline-item-inner .icon-3 {
+  right: -7rem;
+  background-color: var(--bg-black-50);
+}
+
+.section-about .timeline .timleline-item-inner .icon-2 {
+  left: -7rem;
+  background-color: var(--bg-black-50);
 }
