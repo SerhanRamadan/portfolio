@@ -155,6 +155,8 @@ img {
   padding: 1rem 2.5rem;
   font-size: 1.8rem;
   font-weight: 500;
+  border: none;
+  cursor: pointer;
   color: var(--accent-color);
   background-color: transparent;
   line-height: 1.5;
@@ -168,6 +170,7 @@ img {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .btn-1:after {
@@ -1414,4 +1417,118 @@ img {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+/*? CONTACT SECTION */
+.contact-section {
+  min-height: 100vh;
+  padding: 8rem 0 8rem;
+}
+
+.contact-section .contact-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.contact-section .contact-item-inner {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.contact-section .contact-item-inner i {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}
+
+.contact-section .contact-item-inner span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 1.5rem 0 1rem;
+}
+
+.contact-section .contact-item-inner p {
+  font-size: 1.6rem;
+  color: var(--text-black-600);
+  margin: 0;
+  line-height: 2.5rem;
+  word-break: break-all;
+}
+
+.contact-section .contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.contact-section .w-50 {
+  padding: 0 1.5rem;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact-section .input-group {
+  margin: 0 0 2.5rem;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.contact-section .input-group:after {
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.contact-section .input-group .input-control {
+  height: 4.5rem;
+  width: 100%;
+  display: block;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0 1.5rem;
+  color: var(--text-black-700);
+  background-color: transparent;
+}
+
+.contact-section .input-group textarea.input-control {
+  height: 18rem;
+  resize: none;
+  padding-top: 1.5rem;
+}
+
+.contact-section .input-group .input-control:focus {
+  box-shadow: var(--inner-shadow);
+}
+
+.contact-section .submit-btn {
+  position: absolute;
+  flex: 0 0 100%;
+  max-width: 100%;
+  right: 1.5rem;
+  padding-top: 1.5rem;
 }
