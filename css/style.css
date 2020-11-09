@@ -1306,3 +1306,112 @@ img {
 .portfolio-popout .pp-next {
   right: 1.5rem;
 }
+
+/*? TESTIMONIAL SECTION */
+.testimonial-section {
+  padding: 8rem 0 8rem;
+  min-height: 100vh;
+}
+.testimonial-section .testimonial-box {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.testimonial-section .testimonial-slider {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.testimonial-section .testimonial-slider-container {
+  display: flex;
+  align-items: center;
+  transition: margin 1s ease;
+  -webkit-transition: margin 1s ease;
+  -moz-transition: margin 1s ease;
+  -ms-transition: margin 1s ease;
+  -o-transition: margin 1s ease;
+}
+
+.testimonial-section .testimonial-item {
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-section .testimonial-item i {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--text-black-600);
+  opacity: 0.2;
+}
+
+.testimonial-section .testimonial-item i.left {
+  left: 1rem;
+  top: 1rem;
+}
+
+.testimonial-section .testimonial-item i.right {
+  right: 1rem;
+  top: 10rem;
+}
+
+.testimonial-section .testimonial-item p {
+  font-size: 1.3rem;
+  color: var(--text-black-700);
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.testimonial-section .testimonial-item img {
+  max-width: 10rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonial-section .testimonial-item span {
+  display: block;
+  margin: 2rem 0 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-black-600);
+}
+
+.testimonial-section .testimonial-slider-nav {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.testimonial-section .testimonial-slider-nav span {
+  width: 4rem;
+  height: 4rem;
+  color: var(--accent-color);
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.testimonial-section .testimonial-slider-nav span:after {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
