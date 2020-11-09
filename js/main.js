@@ -39,13 +39,22 @@
         navMenu.querySelector('.active').classList.add('outer-shadow', 'hover-in-shadow');
         navMenu.querySelector('.active').classList.remove('active', 'inner-shadow');
 
-        event.target.classList.add('active', 'inner-shadow');
-        event.target.classList.remove('outer-shadow', 'hover-in-shadow');
-        hideNav();
-
-        console.log(hash);
+        if (navMenu.classList.contains('open')) {
+          event.target.classList.add('active', 'inner-shadow');
+          event.target.classList.remove('outer-shadow', 'hover-in-shadow');
+          hideNav();
+        } else {
+          let navItems = navMenu.querySelectorAll('.link-item');
+          navItems.forEach((item) => {
+            if (item === item.hash) {
+              item.target.classList.add('active', 'inner-shadow');
+              item.target.classList.remove('outer-shadow', 'hover-in-shadow');
+            }
+          });
+          fadeOutEffect();
+        }
+        window.location.hash = hash;
       }
-    } else {
     }
   });
 })();

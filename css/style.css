@@ -216,7 +216,7 @@ img {
 }
 
 .section.hide {
-  display: none;
+  display: block;
 }
 
 /*? HEADER */
