@@ -35,6 +35,24 @@ html {
   font-size: 62.5%;
 }
 
+body.dark {
+  --bg-black-900: #fff;
+  --bg-black-100: #353535;
+  --bg-black-50: #2b2c2f;
+  --bg-opacity: rgba(43, 44, 47, 0.5);
+  --text-black-900: #fff;
+  --text-black-700: #fff;
+  --text-black-600: #bbb;
+  --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
+  --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
+  --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
+}
+
+/* body.dark .main-header .logo {
+  background: var(--accent-color);
+} */
+
 body {
   background-color: var(--bg-black-50);
   line-height: 1.5;
